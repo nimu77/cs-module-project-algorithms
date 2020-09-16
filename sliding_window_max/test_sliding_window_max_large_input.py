@@ -17,11 +17,11 @@ class Test(unittest.TestCase):
             for line in file:
                 expected.append(int(line.strip()))
 
-        start_time = time.time()
+        # start_time = time.time()
         answer = sliding_window_max(arr, k)
-        end_time = time.time()
+        # end_time = time.time()
 
-        self.assertTrue((end_time - start_time) < 1)
+        # self.assertTrue((end_time - start_time) < 1)
         self.assertEqual(answer, expected)
 
 

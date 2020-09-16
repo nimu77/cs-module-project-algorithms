@@ -4,8 +4,17 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
+    # loop through the loop
+    # if the value matches move to another index to check
+    bucket = [0 for i in range(len(arr))]
 
-    pass
+    for value in arr:
+        bucket[value] += 1
+        
+    for i, v in enumerate(bucket):
+        if v == 1:
+            return i
+    
 
 
 if __name__ == '__main__':
