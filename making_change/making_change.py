@@ -3,9 +3,15 @@
 import sys
 
 def making_change(amount, denominations):
-  # Your code here
-
-  pass
+  if amount < 0:
+    # there is no way to make this amount with the given coins
+    return 0
+  elif amount == 0:
+    return 1
+  elif len(denominations) == 0 and amount > 0:
+    return 0
+  else:
+    return making_change(amount - denominations[-1], denominations) + making_change(amount, denominations[:-1])
 
 
 if __name__ == "__main__":
