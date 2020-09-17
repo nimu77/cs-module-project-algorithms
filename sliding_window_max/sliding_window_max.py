@@ -9,6 +9,7 @@ def sliding_window_max(nums, k):
     a = 0
     b = k
     output = []
+
     if k > len(nums):
         output.append(max(nums))
     else:
@@ -19,6 +20,12 @@ def sliding_window_max(nums, k):
             
  
     return output
+    # a = k-1
+    # for i in range(len(nums)-a):
+    #     output.append(max([nums[i], nums[i+1], nums[i+2]]))
+
+    # return output
+
 
 
 if __name__ == '__main__':
