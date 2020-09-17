@@ -2,11 +2,19 @@
 Input: a List of integers
 Returns: a List of integers
 '''
+import numpy as np
 def product_of_all_other_numbers(arr):
     # Your code here
-
-    pass
-
+    a = 0
+    b = 0
+    for i in range(a + 1, len(arr)):
+        if i < a:
+            arr[i] == (arr[a:])
+        elif i >= a:
+            arr[i] == (arr[:i]) + (arr[i+1:])
+        # if i > a:
+        #     arr[i] == math.prod(arr[:i]) * math
+    return arr
 
 if __name__ == '__main__':
     # Use the main function to test your implementation
